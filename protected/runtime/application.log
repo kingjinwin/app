@@ -1,0 +1,26 @@
+2012/06/09 07:21:29 [error] [php] Undefined variable: model (D:\WorkSpace\Default\app\protected\views\login\index.php:12)
+Stack trace:
+#0 D:\WorkSpace\Default\app\framework\web\CController.php(870): LoginController->renderFile()
+#1 D:\WorkSpace\Default\app\framework\web\CController.php(783): LoginController->renderPartial()
+#2 D:\WorkSpace\Default\app\protected\controllers\LoginController.php(6): LoginController->render()
+#3 D:\WorkSpace\Default\app\framework\web\actions\CInlineAction.php(50): LoginController->actionIndex()
+#4 D:\WorkSpace\Default\app\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\WorkSpace\Default\app\framework\web\CController.php(287): LoginController->runAction()
+#6 D:\WorkSpace\Default\app\framework\web\CController.php(266): LoginController->runActionWithFilters()
+#7 D:\WorkSpace\Default\app\framework\web\CWebApplication.php(276): LoginController->run()
+#8 D:\WorkSpace\Default\app\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\WorkSpace\Default\app\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\WorkSpace\Default\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/?r=Login
+in D:\WorkSpace\Default\app\protected\views\login\index.php (12)
+in D:\WorkSpace\Default\app\protected\controllers\LoginController.php (6)
+in D:\WorkSpace\Default\app\index.php (13)
+2012/06/14 00:50:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Ebaycate/index".' in D:\WorkSpace\Default\app\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\WorkSpace\Default\app\framework\web\CWebApplication.php(135): CWebApplication->runController('Ebaycate/index')
+#1 D:\WorkSpace\Default\app\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WorkSpace\Default\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php?r=Ebaycate/index&stid=1
+HTTP_REFERER=http://localhost/app/
+---
